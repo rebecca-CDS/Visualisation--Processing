@@ -16,7 +16,7 @@ size(500, 500);
   println(Arduino.list());
 arduino = new Arduino(this, Arduino.list()[0], 57600);
 
-dOut = new DataOut(this, "http://www.pachube.com/api/35136.xml", "OfWHirEnR3GNFpiATo0O9TDuv5pLcSLBDHO3Y5fOlaE");
+dOut = new DataOut(this, "http://www.pachube.com/api/35136.xml", "key");
 
 dOut.addData(0,"Light Sensor, Photoresistor, Light Level");
 dOut.addData(1, "Timer");
